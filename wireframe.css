@@ -4,148 +4,192 @@
 
 /* Mobile display settings */
 
-@media screen and (min-width: 320px) {
+body {
+  background-color: #f9fff3;
+  line-height: 1.5;
+  margin: 0;
+  width: 24em;
+}
+
+.tech-icon {
+  color: #4b4b4b;
+  height: 1.5em;
+}
+
+.tech-icon-group {
+  text-align: center;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+img {
+  height: 25em;
+  width: 24em;
+  box-shadow: 5px 5px 18px #888888;
+  border-radius: 0.4em;
+}
+
+.image-div {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.3em;
+  font-family: 'Quattrocento', serif;
+  text-align: center;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-family: 'Quattrocento', serif;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1em;
+  font-family: 'Quattrocento', serif;
+  text-align: center;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+  font-size: 0.9em;
+}
+
+hr {
+  width: 70%;
+}
+
+.description-info {
+  padding-left: 1.4em;
+  padding-right: 1.1em;
+}
+
+.project-img {
+  text-align: center;
+}
+
+.project-header {
+  font-size: 1.4em;
+}
+
+.bio-header {
+  font-size: 1.4em;
+}
+
+.projects-link {
+  padding-left: 1.2em;
+}
+
+.git-hub-link {
+  padding-left: 1.2em;
+}
+
+.project-div-section {
+  padding-top: 0.1em;
+}
+
+.img-links-1 {
+  color: black;
+}
+
+.img-links-2 {
+  color: black;
+}
+
+.git-live-links-1,
+.git-live-links-2 {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.1em;
+}
+
+nav {
+  padding: 1% 0;
+  background-color: black;
+}
+
+footer {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.top-name,
+.top-links,
+.bottom-contact,
+.bottom-link-group {
+  color: white;
+  font-family: 'Quattrocento', serif;
+}
+
+.bottom-link-group {
+  padding-left: 4em;
+}
+
+.bottom-contact {
+  padding-left:  2em;
+}
+
+.nav-elements {
+  display: flex;
+  justify-content: space-around;
+}
+
+header {
+  padding: 12% 0;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+}
+
+/* define body width to 100% from this point on */
+/* Mobile display setting continue as well */
+
+@media screen and (min-width: 400px) {
   body {
-    background-color: #f9fff3;
-    line-height: 1.5;
-    margin: 0;
-  }
-
-  img {
-    height: 25em;
-    width: 24em;
-    box-shadow: 5px 5px 18px #888888;
-    border-radius: 0.4em;
-  }
-
-  .image-div {
-    text-align: center;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  a:hover {
-    color: orange;
-    text-decoration: underline;
-  }
-
-  h1 {
-    font-size: 1.3em;
-    font-family: 'Quattrocento', serif;
-    text-align: center;
-    padding-left: 3em;
-    padding-right: 3em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-    font-family: 'Quattrocento', serif;
-    text-align: center;
-  }
-
-  p {
-    font-family: 'Lato', sans-serif;
-    line-height: 2;
-    font-size: 0.9em;
-  }
-
-  hr {
-    width: 70%;
-  }
-
-  .description-info {
-    padding-left: 1.4em;
-    padding-right: 1.1em;
-  }
-
-  .project-img {
-    text-align: center;
-  }
-
-  .project-header {
-    font-size: 1.4em;
-  }
-
-  .bio-header {
-    font-size: 1.4em;
-  }
-
-  .projects-link {
-    padding-left: 1.2em;
-  }
-
-  .project-div-section {
-    padding-top: 0.1em;
-  }
-
-  .img-links-1 {
-    color: black;
-  }
-
-  .img-links-2 {
-    color: black;
-  }
-
-  .git-live-links {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.1em;
-  }
-
-  nav {
-    padding: 1% 0;
-    background-color: black;
-  }
-
-  footer {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.9em;
-  }
-
-  .top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-
-  .top-name,
-  .top-links,
-  .bottom-contact,
-  .bottom-links {
-    color: white;
-    font-family: 'Quattrocento', serif;
-  }
-
-  .nav-elements {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  header {
-    padding: 12% 0;
-  }
-
-  section {
-    min-height: 200px;
-    padding: 6% 0;
+    width: 100%;
   }
 }
 
-/* Tablet and above settings */
+/* Tablet and above settings begin */
 
 @media screen and (min-width: 1000px) {
   h1 {
     padding-left: 5em;
     padding-right: 5em;
     font-size: 1.7em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    font-family: 'Quattrocento', serif;
+    text-align: center;
   }
 
   header {
@@ -175,11 +219,12 @@
   .top-name,
   .top-links,
   .bottom-contact,
-  .bottom-links {
+  .bottom-link-group {
     font-size: 1.1em;
   }
 
-  .git-live-links {
+  .git-live-links-1,
+  .git-live-links-2 {
     width: 33.3%;
     margin-left: 35%;
   }
@@ -202,6 +247,10 @@
     font-size: 1em;
   }
 
+  .git-live-links-1 {
+    padding-right: 1em;
+  }
+
   img {
     height: 28em;
     width: 28em;
@@ -215,6 +264,12 @@
     font-size: 1.8em;
   }
 
+  h3 {
+    font-size: 1em;
+    font-family: 'Quattrocento', serif;
+    text-align: center;
+  }
+
   .bio-header,
   .project-header {
     font-size: 1.7em;
@@ -223,12 +278,22 @@
   .top-name,
   .top-links,
   .bottom-contact,
-  .bottom-links {
+  .bottom-link-group {
     font-size: 1.35em;
+  }
+
+  .bottom-link-group {
+    padding-left: 5em;
+  }
+
+  .bottom-contact {
+    padding-left: 3em;
   }
 
   .img-links-1,
   .img-links-2 {
     font-size: 1.2em;
   }
+
+
 }
